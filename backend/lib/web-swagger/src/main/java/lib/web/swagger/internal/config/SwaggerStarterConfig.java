@@ -1,4 +1,4 @@
-package com.example.lib.web.swagger.internal.config;
+package lib.web.swagger.internal.config;
 
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
@@ -30,9 +30,9 @@ public class SwaggerStarterConfig {
 
         return new OpenAPI()
                 .info(new Info()
-                        .title("DeepdiveAPI")
-                        .description("Deepdive Project API Documentation")
-                        .version("v1.0.0"))
+                        .title("Public API")
+                        .description("Project API Documentation")
+                        .version("v0.1.0"))
                 .addSecurityItem(securityRequirement)
                 .components(components);
     }
